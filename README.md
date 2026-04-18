@@ -15,10 +15,6 @@
 ```
 ├── index.html      # 主页面文件
 ├── styles.css      # 样式文件
-├── login.html      # 登录页面
-├── deploy.bat      # Windows部署脚本
-├── deploy.sh       # Linux/Mac部署脚本
-├── DEPLOYMENT_GUIDE.md # 详细部署指南
 └── README.md       # 项目说明文档
 ```
 
@@ -92,34 +88,7 @@ MIT License - 可自由使用和修改
 
 欢迎提交Issue和Pull Request来改进这个项目！
 
-## 部署脚本使用
-
-### Windows系统
-```cmd
-# 使用部署脚本
-deploy.bat "初始提交：添加个人主页"
-
-# 或者手动Git命令
-git add .
-git commit -m "提交信息"
-git push origin main
-```
-
-### Linux/Mac系统
-```bash
-# 给脚本执行权限
-chmod +x deploy.sh
-
-# 使用部署脚本
-./deploy.sh "初始提交：添加个人主页"
-```
-
-### 重要提示
-使用脚本前请修改脚本中的 `GITHUB_USERNAME` 为您的实际GitHub用户名
-
 ## 更新日志
 
 - 2025-01-01：初始版本发布
 - 包含基础响应式布局和现代设计风格
-- 添加登录页面功能
-- 提供自动化部署脚本

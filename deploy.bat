@@ -13,7 +13,7 @@ if "%1"=="" (
 )
 
 set COMMIT_MESSAGE=%1
-set GITHUB_USERNAME=kevinxwu
+set GITHUB_USERNAME=你的GitHub用户名
 set REPO_NAME=%GITHUB_USERNAME%.github.io
 
 echo 📦 准备文件...

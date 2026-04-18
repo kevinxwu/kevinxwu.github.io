@@ -14,7 +14,7 @@ fi
 
 # 设置变量
 COMMIT_MESSAGE="$1"
-GITHUB_USERNAME="kevinxwu" # 您的GitHub用户名
+GITHUB_USERNAME="你的GitHub用户名" # 请修改为您的用户名
 REPO_NAME="$GITHUB_USERNAME.github.io"
 
 echo "📦 准备文件..."

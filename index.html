@@ -1,81 +1,286 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
+    <title>Xian Wu — Personal Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <h1>欢迎来到我的个人空间</h1>
-            <p>探索我的世界，分享我的故事</p>
+        <div class="container header-flex">
+            <img src="xianwu.png" alt="Xian Wu" class="profile-photo">
+            <div class="header-text">
+                <h1>Xian Wu (吴贤)</h1>
+                <p class="tagline">Principal Researcher &amp; Director of Tencent Jarvis Lab</p>
+                <p class="contact-line">
+                    <a href="https://scholar.google.com/citations?user=lslB5jkAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+                </p>
+            </div>
         </div>
     </header>
 
     <nav class="navbar">
         <div class="container">
             <ul>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#skills">技能</a></li>
-                <li><a href="#contact">联系</a></li>
-                <li><a href="login.html">登录</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#awards">Awards</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="main-content">
-        <section id="about" class="section">
+        <!-- News -->
+        <section id="news" class="section">
             <div class="container">
-                <h2>关于我</h2>
-                <p>这里是我的个人介绍。我是一名热爱技术和创新的开发者，专注于Web开发和用户体验设计。</p>
-                <p>我喜欢学习新技术，解决复杂问题，并创造有价值的数字产品。</p>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>项目展示</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>项目一</h3>
-                        <p>这是一个示例项目描述，展示我的技术能力和创意。</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>项目二</h3>
-                        <p>另一个精彩的项目，体现我的专业素养。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>技能专长</h2>
-                <ul class="skills-list">
-                    <li>HTML/CSS/JavaScript</li>
-                    <li>React/Vue.js</li>
-                    <li>Node.js</li>
-                    <li>Git/GitHub</li>
-                    <li>UI/UX设计</li>
+                <h2>News</h2>
+                <ul class="news-list">
+                    <li>
+                        <span class="news-date">2026.01</span>
+                        <span class="news-body">3 papers accepted by <strong>ACL 2026 Main</strong> and 4 papers accepted by <strong>ACL 2026 Findings</strong>. 🎉</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2026.01</span>
+                        <span class="news-body">3 papers accepted by <strong>ICLR 2026</strong>.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2025.12</span>
+                        <span class="news-body">3 papers accepted by <strong>AAAI 2026</strong>.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2025.09</span>
+                        <span class="news-body">One paper accepted by <strong>NeurIPS 2025</strong> as <strong>Spotlight</strong>; 3 additional papers accepted by NeurIPS 2025.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2025.08</span>
+                        <span class="news-body">Awarded the <strong>Fujian Provincial Science &amp; Technology Progress First Prize</strong> and <strong>Shenzhen Science &amp; Technology Progress First Prize</strong>.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2025.05</span>
+                        <span class="news-body">2 papers accepted by <strong>ACL 2025 Main</strong> (including 1 <strong>Oral</strong>), 3 papers accepted by <strong>ACL 2025 Findings</strong>, and 1 paper accepted by <strong>ACL 2025 Industry</strong>.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2025.05</span>
+                        <span class="news-body">Our survey on medical LLMs is published in <strong>Nature Reviews Bioengineering</strong>.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2024.09</span>
+                        <span class="news-body">Recognized as <strong>Stanford University Global Top 2% Scientist (2024)</strong>.</span>
+                    </li>
                 </ul>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <!-- Publications -->
+        <section id="publications" class="section">
             <div class="container">
-                <h2>联系我</h2>
-                <p>邮箱：kevinxianwu@hotmail.com</p>
-                <p>GitHub：github.com/kevinxwu</p>
+                <h2>Publications</h2>
+                <p class="pub-note">
+                    Google Scholar citations exceed <strong>10,000</strong> (h-index: 51, i10-index: 128), with 20+ papers cited over 100 times.
+                    For the full list, please visit <a href="https://scholar.google.com/citations?user=lslB5jkAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+                </p>
+
+                <h3 class="pub-year">2026</h3>
+                <ol class="pub-list">
+                    <li>Zhihong Zhu, Fan Zhang, Yunyan Zhang, Jinghan Sun, Guimin Hu, Hao Wu, Yuyan Chen, Bowen Xing, <strong>Xian Wu#</strong>. Large Vision-Language Model for Explainable and Generalizable Multi-modal Sarcasm Detection. <em>AAAI 2026</em>.</li>
+                    <li>Zhihong Zhu, Yunyan Zhang, Fan Zhang, Bowen Xing, <strong>Xian Wu#</strong>. CMID: Towards Medical Visual Question Answering via Contrastive Mutual Information Decoding. <em>AAAI 2026</em>.</li>
+                    <li>Yuan Gao, Ruiqi Shu, Hao Wu, Fan Xu, Yanfei Xiang, Ruijian Gou, Qingsong Wen, <strong>Xian Wu#</strong>, Kun Wang, Xiaomeng Huang#. NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation. <em>AAAI 2026</em>.</li>
+                    <li>Zhengyi Zhao, Shubo Zhang, Zezhong Wang, Yuxi Zhang, Huimin Wang, Yutian Zhao, Yefeng Zheng, Binyang Li#, Kam-Fai Wong, <strong>Xian Wu#</strong>. Guaranteeing Knowledge Integration with Joint Decoding for Retrieval-Augmented Generation. <em>ACL 2026</em>.</li>
+                    <li>Zixuan Huang, Zhihong Zhu, Xiaolong Liu, Yanchao Hao, Manman Zhang, Zheng Wei, Bowen Xing, <strong>Xian Wu#</strong>, Ye Li, Fen Miao, Yefeng Zheng#. Beyond Surface Features: Advancing Medical Vision-Language Alignment via Dynamic Evidence-Guided Preference Optimization. <em>ACL 2026</em>.</li>
+                    <li>Xiangxu Zhang, Lei Li, Yanyun Zhou, Xiao Zhou#, Yingying Zhang, <strong>Xian Wu#</strong>. Inflated Excellence or True Performance? Rethinking Medical Diagnostic Benchmarks with Dynamic Evaluation. <em>ACL 2026</em>.</li>
+                    <li>Yimin Deng, Yejing Wang, Zhenxi Lin, Zichuan Fu, <strong>Xian Wu#</strong>, Derong Xu, Yefeng Zheng, Xiangyu Zhao#, Guoshuai Zhao, Li Zhu, Xueming Qian#. AdapTime: Enabling Adaptive Temporal Reasoning in Large Language Models. <em>ACL Findings 2026</em>.</li>
+                    <li>Yimin Deng, Zhenxi Lin, Yejing Wang, <strong>Xian Wu#</strong>, Pengyue Jia, Zichuan Fu, Derong Xu, Yefeng Zheng, Xiangyu Zhao#, Guoshuai Zhao, Li Zhu, Xueming Qian#. MultiDx: A Multi-Source Knowledge Integration Framework towards Diagnostic Reasoning. <em>ACL Findings 2026</em>.</li>
+                    <li>Jinghan Sun, Dong Wei, Zhihong Zhu, Yuyang Xue, Steven McDonagh, <strong>Xian Wu#</strong>. Multimodal Dual-Path Decoding for Medical Report Generation. <em>ACL Findings 2026</em>.</li>
+                    <li>Zichuan Fu, <strong>Xian Wu#</strong>, Guojing Li, Yejing Wang, Yijun Chen, Zihao Zhao, Yixuan Luo, Hanyu Yan, Yefeng Zheng, Xiangyu Zhao#. Tandem: Riding Together with Large and Small Language Models for Efficient Reasoning. <em>ACL Findings 2026</em>.</li>
+                    <li>Yifeng Wu, Huimin Huang, Shangjie Zhou, Yawen Huang, Hao Zheng, Yun Chen, <strong>Xian Wu</strong>, Ruize Han, Guanhua Chen. InfoScan: Information-Efficient Visual Scanning via Resource-Adaptive Walks. <em>ICLR 2026</em>.</li>
+                    <li>Yongchao Long, Yingying Zhang, Xianbin Wen, <strong>Xian Wu#</strong>, Yuxi Zhou, Shenda Hong#. Copy-Paste to Mitigate Large Language Model Hallucinations. <em>ICLR 2026</em>.</li>
+                    <li>Fan Zhang, Zebang Cheng, Chong Deng, Haoxuan Li, Zheng Lian, Qian Chen, Huadai Liu, Wen Wang, YiFan Zhang, Renrui Zhang, Ziyu Guo, Zhihong Zhu, Hao Wu, Haixin Wang, Yefeng Zheng, <strong>Xian Wu</strong>, et al. MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models. <em>ICLR 2026</em>.</li>
+                </ol>
+
+                <h3 class="pub-year">2025</h3>
+                <ol class="pub-list" start="14">
+                    <li>Xixian Yong, Xiao Zhou#, Yingying Zhang, Jinlin Li, Yefeng Zheng, <strong>Xian Wu#</strong>. Think or Not? Exploring Thinking Efficiency in Large Reasoning Models via an Information-Theoretic Lens. <em>NeurIPS 2025 (spotlight)</em>.</li>
+                    <li>Fan Zhang, Tianyu Liu, Zhihong Zhu, Hao Wu, Haixin Wang, Donghao Zhou, Yefeng Zheng, Kun Wang#, <strong>Xian Wu#</strong>, Pheng-Ann Heng#. CellVerse: Do Large Language Models Really Understand Cell Biology? <em>NeurIPS 2025 Datasets and Benchmarks Track</em>.</li>
+                    <li>Shurong Yang, Dong Wei, Yihuang Hu, Qiong Peng, Hong Liu, Yawen Huang, <strong>Xian Wu#</strong>, Yefeng Zheng, Liansheng Wang#. D-VST: Diffusion Transformer for Pathology-Correct Tone-Controllable Cross-Dye Virtual Staining of Whole Slide Images. <em>NeurIPS 2025</em>.</li>
+                    <li>Jingjun Yi, Qi Bi, Hao Zheng, Huimin Huang, Yixian Shen, Haolan Zhan, Wei Ji, Yawen Huang, Yuexiang Li, <strong>Xian Wu</strong>, Yefeng Zheng. Degradation-Aware Dynamic Schrodinger Bridge for Unpaired Image Restoration. <em>NeurIPS 2025</em>.</li>
+                    <li>Hao Zheng, Jingjun Yi, Qi Bi, Huimin Huang, Haolan Zhan, Yawen Huang, Yuexiang Li, <strong>Xian Wu</strong>, Yefeng Zheng. Learning a Cross-Modal Schrodinger Bridge for Visual Domain Generalization. <em>NeurIPS 2025</em>.</li>
+                    <li>Fenglin Liu#, <strong>Xian Wu#</strong>, Jinfa Huang, Bang Yang, Kim Branson, Patrick Schwab, Lei Clifton, Ping Zhang, Jiebo Luo, Yefeng Zheng, David A. Clifton#. Aligning, Autoencoding and Prompting Large Language Models for Novel Disease Reporting. <em>T-PAMI 2025</em>.</li>
+                    <li>Fenglin Liu#, Zheng Li, Qingyu Yin, Jinfa Huang, Jiebo Luo, Anshul Thakur, Kim Branson, Patrick Schwab, Bing Yin, <strong>Xian Wu#</strong>, Yefeng Zheng &amp; David A. Clifton#. A multimodal multidomain multilingual medical foundation model for zero shot clinical diagnosis. <em>NPJ Digital Medicine 2025</em>.</li>
+                    <li>Zichuan Fu*, <strong>Xian Wu*</strong>, Yejing Wang, Wanyu Wang, Shanshan Ye, Hongzhi Yin, Yi Chang, Yefeng Zheng, Xiangyu Zhao#. Training-free LLM Merging for Multi-task Learning. <em>ACL 2025 (oral)</em>.</li>
+                    <li>Qidong Liu, <strong>Xian Wu#</strong>, Wanyu Wang, Yejing Wang, Yuanshao Zhu, Xiangyu Zhao#, Feng Tian#, Yefeng Zheng. LLMEmb: Large Language Model Can Be a Good Embedding Generator for Sequential Recommendation. <em>AAAI 2025 (oral)</em>.</li>
+                    <li>Jiageng Wu, <strong>Xian Wu#</strong>, Yefeng Zheng, Jie Yang#. Clinical pathway-aware large language models for reliable and transparent medical dialogue. <em>Journal of Biomedical Informatics 2025</em>.</li>
+                    <li>Fenglin Liu, Hongjian Zhou, Boyang Gu, Xinyu Zou, Jinfa Huang, Jinge Wu, Yiru Li, Sam S. Chen, Yining Hua, Peilin Zhou, Junling Liu, Chengfeng Mao, Chenyu You, <strong>Xian Wu</strong>, Yefeng Zheng, Lei Clifton, Zheng Li, Jiebo Luo &amp; David A. Clifton. Application of large language models in medicine. <em>Nature Reviews Bioengineering 2025</em>.</li>
+                    <li>Hongjian Zhou, Fenglin Liu, Jinge Wu, Wenjun Zhang, Guowei Huang, Lei Clifton, David Eyre, Haochen Luo, Fengyuan Liu, Kim Branson, Patrick Schwab, <strong>Xian Wu</strong>, Yefeng Zheng, Anshul Thakur, David A Clifton. <em>Nature Biomedical Engineering 2025</em>.</li>
+                    <li>Zhengyi Zhao, Shubo Zhang, Yuxi Zhang, Yanxi Zhao, Yifan Zhang, Zezhong Wang, Huimin Wang, Yutian Zhao, Bin Liang, Yefeng Zheng, Binyang Li#, Kam-Fai Wong, <strong>Xian Wu#</strong>. MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models. <em>EMNLP 2025</em>.</li>
+                    <li>Zhengyi Zhao, Shubo Zhang, Zezhong Wang, Huimin Wang, Yutian Zhao, Bin Liang, Yefeng Zheng, Binyang Li#, Kam-Fai Wong, <strong>Xian Wu#</strong>. An Adaptive Test-Time Scaling Strategy for Contextual Question Answering. <em>EMNLP 2025</em>.</li>
+                    <li>Huimin Wang, Yutian Zhao, Yefeng Zheng, <strong>Xian Wu#</strong>. RareSyn: Health Record Synthesis for Rare Disease Diagnosis. <em>EMNLP 2025 short</em>.</li>
+                    <li>Yunyan Zhang, Zhihong Zhu, <strong>Xian Wu#</strong>. CMedCalc-Bench: A Fine-Grained Benchmark for Chinese Medical Calculations in LLM. <em>EMNLP 2025</em>.</li>
+                    <li>Zhenxi Lin, Ziheng Zhang, Jian Wu, Yefeng Zheng, <strong>Xian Wu#</strong>. Guiding Large Language Models for Biomedical Entity Linking via Restrictive and Contrastive Decoding. <em>EMNLP Findings 2025</em>.</li>
+                    <li>Zhihong Zhu, Fan Zhang, Yunyan Zhang, Jinghan Sun, Zhiqi Huang, Qingqing Long, Bowen Xing, <strong>Xian Wu#</strong>. A Survey on Multi-modal Intent Recognition: Recent Advances and New Frontiers. <em>EMNLP Findings 2025</em>.</li>
+                    <li>Fan Zhang, Hao Chen, Zhihong Zhu, Ziheng Zhang, Zhenxi Lin, Ziyue Qiao, Yefeng Zheng, <strong>Xian Wu#</strong>. A Survey on Foundation Language Models for Single-cell Biology. <em>ACL 2025</em>.</li>
+                    <li>Zhihong Zhu, Yunyan Zhang, Xianwei Zhuang, Fan Zhang, Zhongwei Wan, Yuyan Chen, Qingqing Long, Yefeng Zheng, <strong>Xian Wu#</strong>. Can We Trust AI Doctors? A Survey of Medical Hallucination in LLMs. <em>ACL Findings 2025</em>.</li>
+                    <li>Tianshi Ming, <strong>Xian Wu#</strong>, Yingying Zhang, Zichuan Fu, Dawei Cheng. AnchorCoT: Anchors Pave the Way for Multi-hop Reasoning. <em>ACL Findings 2025</em>.</li>
+                    <li>Yimin Deng, Yuxia Wu, Yejing Wang, Guoshuai Zhao#, Li Zhu#, Qidong Liu, Derong Xu, Zichuan Fu, <strong>Xian Wu#</strong>, Yefeng Zheng, Xiangyu Zhao#, Xueming Qian. A Multi-Expert Structural-Semantic Hybrid Framework for Unveiling Historical Patterns in Temporal Knowledge Graphs. <em>ACL Findings 2025</em>.</li>
+                    <li>Zichuan Fu, <strong>Xian Wu#</strong>, Guojing Li, Yingying Zhang, Yefeng Zheng, Tianshi Ming, Yejing Wang, Wanyu Wang, Xiangyu Zhao#. Model Merging for Knowledge Editing. <em>ACL Industry 2025</em>.</li>
+                    <li>Derong Xu, Xinhang Li, Ziheng Zhang, Zhenxi Lin, Zhihong Zhu, Zhi Zheng, <strong>Xian Wu#</strong>, Xiangyu Zhao#, Tong Xu#, Enhong Chen. Harnessing Large Language Models for Knowledge Graph Question Answering via Adaptive Multi-Aspect Retrieval-Augmentation. <em>AAAI 2025</em>.</li>
+                    <li>Jiageng Wu, <strong>Xian Wu#</strong>, Zhaopeng Qiu, Yefeng Zheng, Jie Yang. MedLens: Improve Mortality Prediction Via Medical Signs Selecting and Regression. <em>AAAI 2025</em>.</li>
+                    <li>Ziheng Zhang, Zhenxi Lin, Yefeng Zheng, <strong>Xian Wu#</strong>. How much Medical Knowledge do LLMs have? An Evaluation of Medical Knowledge Coverage for LLMs. <em>WWW 2025 Web4Good</em>.</li>
+                </ol>
+
+                <h3 class="pub-year">2024</h3>
+                <ol class="pub-list" start="40">
+                    <li><strong>Xian Wu</strong>, Yutian Zhao, Yunyan Zhang, Jiageng Wu, Zhihong Zhu, Yingying Zhang, Yi Ouyang, Ziheng Zhang, Huimin Wang, Zhenxi Lin, Jie Yang, Shuang Zhao, Yefeng Zheng#. MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey. <em>NeurIPS 2024 Datasets and Benchmarks Track</em>.</li>
+                    <li>Qidong Liu, <strong>Xian Wu#</strong>, Yejing Wang, Zhang Zijian, Tian Feng#, Yefeng Zheng, Xiangyu Zhao#. LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation. <em>NeurIPS 2024</em>.</li>
+                    <li>Qidong Liu, <strong>Xian Wu#</strong>, Xiangyu Zhao#, Yuanshao Zhu, Derong Xu, Feng Tian#, Yefeng Zheng. When MOE Meets LLMs: Parameter Efficient Fine-tuning for Multi-task Medical Applications. <em>SIGIR 2024</em>.</li>
+                    <li>Xi Sheryl Zhang, Weifan Guan, Jiahao Lu, Zhaopeng Qiu, Jian Cheng, <strong>Xian Wu#</strong>, Yefeng Zheng. GraphLeak: Patient Record Leakage through Gradients with Knowledge Graph. <em>WWW 2024</em>.</li>
+                    <li>Derong Xu, Wei Chen, Wenjun Peng, Chao Zhang, Tong Xu#, Xiangyu Zhao#, <strong>Xian Wu#</strong>, Yefeng Zheng, Yang Wang, Enhong Chen#. Large language models for generative information extraction: A survey. <em>Frontiers of Computer Science 2024</em>.</li>
+                    <li>Jiageng Wu, <strong>Xian Wu#</strong>, Zhaopeng Qiu, Minghui Li, Shixu Lin, Yingying Zhang, Yefeng Zheng, Changzheng Yuan, Jie Yang#. Large Language Models Leverage External Knowledge to Extend Clinical Insight Beyond Language Boundaries. <em>JAMIA 2024</em>.</li>
+                    <li>Fenglin Liu, Tingting Zhu, <strong>Xian Wu</strong>, Bang Yang, Chenyu You, Chenyang Wang, Lei Lu, Zhangdaihong Liu, Yefeng Zheng, Xu Sun, Yang Yang, Lei Clifton, &amp; David Clifton. A Medical Multimodal Large Language Model for Future Pandemics. <em>NPJ Digital Medicine 2024</em>.</li>
+                    <li>Zhihong Zhu, Xuxin Cheng, Yunyan Zhang, Zhaorun Chen, Qingqing Long, Hongxiang Li, Zhiqi Huang, <strong>Xian Wu#</strong>, Yefeng Zheng. Multivariate cooperative game for image-report pairs: hierarchical semantic alignment for medical report generation. <em>MICCAI 2024</em>.</li>
+                    <li>Huimin Wang, Yutian Zhao, <strong>Xian Wu#</strong>, Yefeng Zheng. iMAPScore: Medical fact evaluation made easy. <em>ACL 2024 (Findings)</em>.</li>
+                    <li>Zhenxi Lin, Ziheng Zhang, <strong>Xian Wu</strong>, Yefeng Zheng. Biomedical entity linking as multiple choice question answering. <em>LREC-COLING 2024</em>.</li>
+                    <li>Derong Xu, Zhang Ziheng, Lin Zhenxi, <strong>Xian Wu#</strong>, Zhu Zhihong, Xu Tong#, Zhao Xiangyu#, Zheng Yefeng, Chen Enhong. Multi-perspective improvement of knowledge graph completion with large language models. <em>LREC-COLING 2024</em>.</li>
+                    <li>Zhihong Zhu, Zhang Yunyan, Cheng Xuxin, Huang Zhiqi, Xu Derong, <strong>Xian Wu#</strong>, Zheng Yefeng. Alignment before awareness: Towards visual question localized-answering in robotic surgery. <em>LREC-COLING 2024</em>.</li>
+                    <li>Yutian Zhao, Huimin Wang, <strong>Xian Wu#</strong>, Yefeng Zheng. MKeCL: Medical knowledge-enhanced contrastive learning for few-shot disease diagnosis. <em>LREC-COLING 2024</em>.</li>
+                    <li>Yingying Zhang, <strong>Xian Wu#</strong>, Yu Zhang, Zheng Yefeng. Knowledge-aware Attention Network for Medication Effectiveness Prediction. <em>LREC-COLING 2024</em>.</li>
+                    <li>Derong Xu, Zhang Ziheng, Zhu Zhihong, Lin Zhenxi, Liu Qidong, <strong>Xian Wu#</strong>, Xu Tong#, Wang Wanyu, Ye Yuyang, Zhao Xiangyu#. Editing factual knowledge and explanatory ability of medical large language models. <em>CIKM 2024</em>.</li>
+                    <li>Derong Xu, Zhang Ziheng, Zhu Zhihong, Lin Zhenxi, Liu Qidong, <strong>Xian Wu#</strong>, Xu Tong#, Zhao Xiangyu#, Zheng Yefeng, Enhong Chen#. Mitigating hallucinations of large language models in medical information extraction via contrastive decoding. <em>EMNLP 2024 (Findings)</em>.</li>
+                </ol>
+
+                <h3 class="pub-year">2023</h3>
+                <ol class="pub-list" start="56">
+                    <li>Fenglin Liu, Tingting Zhu, <strong>Xian Wu</strong>, Bang Yang, Chenyu You, Chenyang Wang, Lei Lu, Zhangdaihong Liu, Yefeng Zheng, Xu Sun, Yang Yang, Lei Clifton, &amp; David Clifton. A Medical Multimodal Large Language Model for Future Pandemics. <em>NPJ Digital Medicine 2023</em>.</li>
+                    <li>Yongqi Zhang, Quanming Yao, Ling Yue, <strong>Xian Wu</strong>, Ziheng Zhang, Zhenxi Lin, Yefeng Zheng. Emerging Drug Interaction Prediction Enabled by Flow-based Graph Neural Network with Biomedical Network. <em>Nature Computational Science 2023</em>.</li>
+                    <li>Bang Yang, Fenglin Liu, <strong>Xian Wu</strong>, Yaowei Wang, Xu Sun, Yuexian Zou. MultiCapCLIP: Auto-Encoding Prompts for Zero-Shot Multilingual Visual Captioning. <em>ACL 2023</em>.</li>
+                    <li>Shuxin Yang, <strong>Xian Wu</strong>, Shen Ge, Zhuozhao Zheng, Kevin S Zhou, Li Xiao. Radiology report generation with a learned knowledge base and multi-modal alignment. <em>Medical Image Analysis 2023</em>.</li>
+                    <li>Xinhang Li, Zhaopeng Qiu, Xiangyu Zhao, Yong Zhang#, Chunxiao Xing, <strong>Xian Wu#</strong>. REST: Drug-Drug Interaction Prediction via Reinforced Student-Teacher Curriculum Learning. <em>CIKM 2023</em>.</li>
+                    <li>Yejing Wang, Shen Ge, Xiangyu Zhao#, <strong>Xian Wu#</strong>, Tong Xu, Chen Ma, Zhi Zheng. Doctor Specific Tag Recommendation for Online Medical Record Management. <em>KDD 2023</em>.</li>
+                    <li>Rui Zhou, <strong>Xian Wu</strong>, Zhaopeng Qiu, Yefeng Zheng, Xu Chen. Distributionally Robust Sequential Recommendation. <em>SIGIR 2023</em>.</li>
+                    <li>Jiageng Wu, <strong>Xian Wu#</strong>, Yining Hua, Shixu Lin, Yefeng Zheng, Jie Yang#. Exploring Social Media for Early Detection of Depression in COVID-19 Patients. <em>WWW 2023</em>.</li>
+                    <li>Lei Gao, Xinnan Zhang, <strong>Xian Wu#</strong>, Shen Ge, Yefeng Zheng. Dialogue Medical Information Extraction with Medical-Item Graph and Dialogue-Status Enriched Representation. <em>EMNLP Findings 2023</em>.</li>
+                    <li>Ling Yue, Yongqi Zhang, Quanming Yao, Yong Li, <strong>Xian Wu</strong>, Ziheng Zhang, Zhenxi Lin, Yefeng Zheng. Relation-aware Ensemble Learning for Knowledge Graph Embedding. <em>EMNLP 2023 Short</em>.</li>
+                    <li>Yingying Zhang, <strong>Xian Wu</strong>, Quan Fang, Shengsheng Qian, Changsheng Xu. Knowledge-enhanced attributed multi-task learning for medicine recommendation. <em>TOIS 2023</em>.</li>
+                    <li>Zhi Zheng, Chao Wang, Tong Xu, Dazhong Shen, Penggang Qin, Xiangyu Zhao, Baoxing Huai, <strong>Xian Wu</strong>, Enhong Chen. Interaction-aware drug package recommendation via policy gradient. <em>TOIS 2023</em>.</li>
+                </ol>
+
+                <h3 class="pub-year">2022</h3>
+                <ol class="pub-list" start="68">
+                    <li>Fenglin Liu, Bang Yang, Chenyu You, <strong>Xian Wu</strong>, Shen Ge, Zhangdaihong Liu, Xu Sun, Yang Yang, David Clifton. Retrieve, reason, and refine: Generating accurate and faithful patient instructions. <em>NeurIPS 2022</em>.</li>
+                    <li>Peng Jin, Jinfa Huang, Fenglin Liu, <strong>Xian Wu</strong>, Shen Ge, Guoli Song, David Clifton, Jie Chen. Expectation-maximization contrastive learning for compact video-and-language representations. <em>NeurIPS 2022</em>.</li>
+                    <li><strong>Xian Wu</strong>, Shuxin Yang, Zhaopeng Qiu, Shen Ge, Yangtian Yan, Xingwang Wu, Yefeng Zheng, Kevin S Zhou, Li Xiao. DeltaNet: Conditional medical report generation for COVID-19 diagnosis. <em>Coling 2022</em>.</li>
+                    <li>Shuxin Yang, <strong>Xian Wu#</strong>, Shen Ge, S Kevin Zhou, Li Xiao#. Knowledge matters: Chest radiology report generation with general and specific knowledge. <em>Medical Image Analysis 2022</em>.</li>
+                    <li>Zhi Zheng, Zhaopeng Qiu, Hui Xiong#, <strong>Xian Wu#</strong>, Tong Xu, Enhong Chen, Xiangyu Zhao#. DDR: Dialogue Based Doctor Recommendation for Online Medical Service. <em>KDD 2022</em>.</li>
+                    <li>Zhi Zheng, Zhaopeng Qiu, Tong Xu, <strong>Xian Wu#</strong>, Xiangyu Zhao#, Enhong Chen, Hui Xiong. CBR: Context Bias Aware Recommendation for Debiasing User Modeling and Click Prediction. <em>WWW 2022</em>.</li>
+                    <li>Rui Wu, Zhaopeng Qiu, Jiacheng Jiang, Guilin Qi, <strong>Xian Wu#</strong>. Conditional generation net for medication recommendation. <em>WWW 2022</em>.</li>
+                    <li>Xinhang Li, Zhaopeng Qiu, Jiacheng Jiang, Yong Zhang, Chunxiao Xing, <strong>Xian Wu#</strong>. Conditional Cross-Platform User Engagement Prediction. <em>TOIS 2022</em>.</li>
+                    <li>Fenglin Liu, Bang Yang, Chenyu You, <strong>Xian Wu</strong>, Shen Ge, Adelaide Woicik, Sheng Wang. Graph-in-graph network for automatic gene ontology description generation. <em>KDD 2022</em>.</li>
+                    <li>Xinhang Li, Zhaopeng Qiu, Xiangyu Zhao, Zihao Wang, Yong Zhang#, Chunxiao Xing, <strong>Xian Wu#</strong>. Gromov-wasserstein guided representation learning for cross-domain recommendation. <em>CIKM 2022</em>.</li>
+                    <li>Weilin Lin, Xiangyu Zhao, Yejing Wang, Tong Xu, <strong>Xian Wu</strong>. AdaFS: Adaptive feature selection in deep recommender system. <em>KDD 2022</em>.</li>
+                </ol>
+
+                <h3 class="pub-year">2021</h3>
+                <ol class="pub-list" start="79">
+                    <li>Fenglin Liu, <strong>Xian Wu</strong>, Shen Ge, Wei Fan, Yuexian Zou. Exploring and distilling posterior and prior knowledge for radiology report generation. <em>CVPR 2021</em>.</li>
+                    <li>Fenglin Liu, Chenyu You, <strong>Xian Wu</strong>, Shen Ge, Xu Sun. Auto-encoding knowledge graph for unsupervised medical report generation. <em>NeurIPS 2021</em>.</li>
+                    <li>Fenglin Liu, Shen Ge, <strong>Xian Wu</strong>. Competence-based multimodal curriculum learning for medical report generation. <em>ACL 2021</em>.</li>
+                    <li>Di You, Fenglin Liu, Shen Ge, Xiaoxia Xie, Jing Zhang, <strong>Xian Wu</strong>. AlignTransformer: Hierarchical alignment of visual regions and disease tags for medical report generation. <em>MICCAI 2021</em>.</li>
+                    <li>Yi Li, Zhe Wu, Shuang Zhao, <strong>Xian Wu</strong>, et al. Automatic severity rating for improved psoriasis treatment. <em>MICCAI 2021</em>.</li>
+                    <li>Zhaopeng Qiu, <strong>Xian Wu</strong>, Jing Gao, Wei Fan. U-BERT: Pre-training user representations for improved recommendation. <em>AAAI 2021</em>.</li>
+                    <li>Fenglin Liu, Shen Ge, <strong>Xian Wu</strong>. Competence-based multimodal curriculum learning for medical report generation: Task, dataset and model. <em>AAAI 2021</em>.</li>
+                    <li>Zhiqi Huang, Fenglin Liu, <strong>Xian Wu</strong>, Shen Ge, Helin Wang, Wei Fan, Yuexian Zou. Audio-oriented multimodal machine comprehension via dynamic inter-and intra-modality attention. <em>AAAI 2021</em>.</li>
+                    <li>Fenglin Liu, Xuancheng Ren, <strong>Xian Wu</strong>, Bang Yang, Shen Ge, Yuexian Zou, Xu Sun. O2na: An object-oriented non-autoregressive approach for controllable video captioning. <em>ACL Findings 2021</em>.</li>
+                    <li>Xuewei Ma, Fenglin Liu, Changchang Yin, <strong>Xian Wu</strong>, Shen Ge, Yuexian Zou, Ping Zhang, Xu Sun. Contrastive attention for automatic chest x-ray report generation. <em>ACL Findings 2021</em>.</li>
+                </ol>
+
+                <h3 class="pub-year">2020 and Earlier</h3>
+                <ol class="pub-list" start="89">
+                    <li>Fenglin Liu, <strong>Xian Wu</strong>, Shen Ge, Wei Fan, Yuexian Zou. Federated Learning for Vision-and-Language Grounding Problems. <em>AAAI 2020</em>.</li>
+                    <li>Sheng Shen, Yaliang Li, Nan Du, <strong>Xian Wu</strong>, Yusheng Xie, Shen Ge, Tao Yang, Kai Wang, Xingzheng Liang, Wei Fan. On the Generation of Medical Question-Answer Pairs. <em>AAAI 2020</em>.</li>
+                    <li>Yi Li, Zhe Wu, Shuang Zhao, <strong>Xian Wu</strong>, Yehong Kuang, Yangtian Yan, Shen Ge, Kai Wang, Wei Fan, Xiang Chen, Yong Wang. PSENet: Psoriasis Severity Evaluation Network. <em>AAAI 2020</em>.</li>
+                    <li>Zhaopeng Qiu, <strong>Xian Wu#</strong>, Wei Fan. Automatic Distractor Generation for Multiple Choice Questions in Standard Tests. <em>Coling 2020</em>.</li>
+                    <li>Fenglin Liu, Xuancheng Ren, <strong>Xian Wu</strong>, Shen Ge, Wei Fan, Yuexian Zou, Xu Sun. Prophet Attention: Predicting Attention with Future Attention for Improved Image Captioning. <em>NeurIPS 2020</em>.</li>
+                    <li>Congying Xia, Chenwei Zhang, Tao Yang, Yaliang Li, Nan Du, <strong>Xian Wu</strong>, Wei Fan, Fenglong Ma, Philip Yu. Multi-grained named entity recognition. <em>ACL 2019</em>.</li>
+                    <li>Zhi Qiao, <strong>Xian Wu</strong>, Shen Ge, Wei Fan. MNN: Multimodal attentional neural networks for diagnosis prediction. <em>IJCAI 2019</em>.</li>
+                    <li>Pavel Dmitriev, <strong>Xian Wu</strong>. Measuring metrics. <em>CIKM 2016</em>.</li>
+                    <li><strong>Xian Wu</strong>, Wei Fan, Jing Gao, Ziming Feng, Yong Yu. Detecting Marionette Microblog Users for Improved Information Credibility. <em>JCST 2015</em>.</li>
+                    <li><strong>Xian Wu</strong>, Ziming Feng, Wei Fan, Jing Gao, Yong Yu. Detecting Marionette Microblog Users for Improved Information Credibility. <em>ECML/PKDD 2013</em>.</li>
+                    <li><strong>Xian Wu</strong>, Wei Fan, Yong Yu. Sembler: Ensembling Crowd Sequential Labeling for Improved Quality. <em>AAAI 2012</em>.</li>
+                    <li><strong>Xian Wu</strong>, Wei Fan, Meilun Sheng, Li Zhang, Xiaoxiao Shi, Zhong Su, Yong Yu. A Framework to Represent and Mine Knowledge Evolution from Wikipedia revisions (Poster). <em>WWW 2012</em>.</li>
+                    <li>Qi Su, Xinying Xu, Honglei Guo, Zhili Guo, <strong>Xian Wu</strong>, Xiaoxun Zhang, Bin Swen, Zhong Su. Hidden sentiment association in Chinese web opinion mining. <em>WWW 2008</em>.</li>
+                    <li><strong>Xian Wu</strong>, Lei Zhang, Yong Yu. Exploring social annotations for the semantic web. <em>WWW 2006</em>.</li>
+                    <li>Lei Zhang, <strong>Xian Wu</strong>, Yong Yu. Emergent Semantics from Folksonomies: A Quantitative Study. <em>Journal of Data Semantics 2006</em>.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I am a Principal Researcher and Director of Tencent Jarvis Lab.
+                    My research interests include medical large language models, medical NLP, medical imaging, and multimodal learning.
+                </p>
+                <p>
+                    Prior to Tencent, I worked as <strong>Senior Applied Scientist Manager at Microsoft</strong> and <strong>Staff Researcher at IBM China Research Lab</strong>.
+                    I received my Ph.D. and M.S. in Computer Science from <strong>Shanghai Jiao Tong University</strong> (advisor: Prof. Yong Yu), and my B.S. in Computer Science &amp; Engineering from <strong>Southeast University</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Awards & Honors -->
+        <section id="awards" class="section">
+            <div class="container">
+                <h2>Awards &amp; Honors</h2>
+
+                <h3 class="award-group">Science &amp; Technology Awards</h3>
+                <ul class="award-list">
+                    <li><span class="award-year">2025</span> Fujian Provincial Science &amp; Technology Progress <strong>First Prize</strong></li>
+                    <li><span class="award-year">2025</span> Shenzhen Science &amp; Technology Progress <strong>First Prize</strong></li>
+                    <li><span class="award-year">2025</span> Guangdong Provincial Science &amp; Technology Progress <strong>Second Prize</strong></li>
+                    <li><span class="award-year">2024</span> <strong>Stanford University Global Top 2% Scientist</strong></li>
+                    <li><span class="award-year">2021</span> Huaxia Medical Science &amp; Technology <strong>First Prize</strong> (one of the highest honors in Chinese medicine; only 6 out of 183 applicants received First Prize)</li>
+                </ul>
+
+                <h3 class="award-group">Competition Awards</h3>
+                <ul class="award-list">
+                    <li><span class="award-year">2025</span> CHIP Drug Recommendation Competition <strong>1st Place</strong> (1st/559)</li>
+                    <li><span class="award-year">2025</span> National Medical Insurance Competition <strong>Second Prize</strong></li>
+                    <li><span class="award-year">2024</span> Digital China AI &amp; Technology Competition <strong>Second Prize</strong> (Top 12/710)</li>
+                    <li><span class="award-year">2023</span> CHIP Chinese Medical LLM Fine-tuning Competition <strong>3rd Place</strong> (3rd/362)</li>
+                    <li><span class="award-year">2021</span> CCL Medical Report Generation <strong>1st Place</strong></li>
+                    <li><span class="award-year">2021</span> CCL Doctor-Patient Dialogue Understanding <strong>2nd Place</strong>; Smart Medical Diagnosis <strong>2nd Place</strong></li>
+                    <li><span class="award-year">2021</span> CCKS Medical Entity &amp; Event Extraction <strong>3rd Place</strong></li>
+                    <li><span class="award-year">2020</span> Digital China Smart Healthcare Competition <strong>First Prize</strong> (out of 9,512 teams) + Best Originality, Best Application Practice, Best Investment Value, Most Promising Potential Awards</li>
+                    <li><span class="award-year">2020</span> MSCOCO Captioning Global <strong>Rank 1st</strong></li>
+                    <li><span class="award-year">2020</span> CCKS Medical NER <strong>2nd</strong>, Event Extraction <strong>2nd</strong>, COVID-19 KG <strong>3rd</strong></li>
+                    <li><span class="award-year">2019</span> ICDM Knowledge Graph Competition <strong>2nd Place</strong></li>
+                </ul>
+
+                <h3 class="award-group">Honors &amp; Other Awards</h3>
+                <ul class="award-list">
+                    <li>Global Best Poverty Reduction Case (SSV Cervical Cancer Screening Project)</li>
+                    <li>Tencent Business Breakthrough Award; Tencent CSIG Best Customer Reputation Award</li>
+                    <li>Tencent Anti-COVID Special Contribution Award; Tencent Tech for Good Award</li>
+                    <li>Microsoft HiPo (High Potential, Top 1%) Program ×2 (2015, 2016)</li>
+                </ul>
+
+                <h3 class="award-group">Academic Service</h3>
+                <ul class="award-list">
+                    <li>Reviewer for <em>BMJ</em> (IF: 93.7)</li>
+                    <li>Area Chair / Senior PC / PC for T-PAMI, NeurIPS, ACL, KDD, EMNLP, CVPR, IJCAI, and other top venues</li>
+                    <li>Committee Member, CCF Digital Medicine Division; CIPS Health Information Division</li>
+                    <li>External Expert, People's Medical Publishing House</li>
+                </ul>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 我的个人主页. 保留所有权利.</p>
+            <p>&copy; 2026 Xian Wu. All rights reserved.</p>
         </div>
     </footer>
 </body>
